@@ -1,1 +1,0 @@
-/usr/bin/c++   -O3 -g   CMakeFiles/osm-history-splitter.dir/splitter.cpp.o  -o osm-history-splitter -rdynamic -lz -lpthread -lexpat -lbz2 -lgeos 

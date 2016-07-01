@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/julien/catkin_ws/src/velodyne_tracking/include/osm/osm-history-splitter-master/build",
-  "command": "/usr/bin/c++   -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/julien/catkin_ws/src/velodyne_tracking/include/osm/libosmium/include  -O3 -g   -std=c++11 -Wall -Wextra -pedantic -Wredundant-decls -Wdisabled-optimization -Wctor-dtor-privacy -Wnon-virtual-dtor -Woverloaded-virtual -Wsign-promo -Wold-style-cast -o CMakeFiles/osm-history-splitter.dir/splitter.cpp.o -c /home/julien/catkin_ws/src/velodyne_tracking/include/osm/osm-history-splitter-master/splitter.cpp",
-  "file": "/home/julien/catkin_ws/src/velodyne_tracking/include/osm/osm-history-splitter-master/splitter.cpp"
-}
-]
