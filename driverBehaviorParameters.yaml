@@ -1,0 +1,113 @@
+{
+#############################
+# driveBehavior.cpp
+#############################
+
+#----------------------------
+# Osm parameterization
+#----------------------------
+
+# Osm file for input (".osm" or ".osm.pbf")
+# Needed that it put into datasets/osm/data
+# Go to : http://download.geofabrik.de/
+osmFileName           : karlsruhe-regbez-latest.osm.pbf,
+
+# Osm cut ray
+# Represent the diameter (in Km) of the map circle around the car
+osmCutRay             : 0.7,    # (default 1.2 Km)
+
+# Minimal desired path size (in meters) for all paths.
+minPathSize           : 140.0,   # (default 140.0 m)
+
+#----------------------------
+# Plot parameterization
+#----------------------------
+
+# Screen dimension (in pixel).
+screenHeight            : 1000, # (default 600)
+screenWidth             : 1800, # (default 800)
+
+# Use default driver for plot (xwin). Put false if you want choose the driver yourself through a list in the terminal.
+defaultPlotDriver       : true, # (default true)
+
+# Choose if you want to see all possible paths for selected object.
+seeAllPaths             : false, # (default false)
+
+# Choose if you want to see all curvature profiles for all possible paths for selected object.
+seeAllCurvatureProfiles : false, # (default false)
+
+# Choose if you want to see all velocity profiles (all cases) for all possible paths for selected object.
+seeAllVelocityProfiles  : false, # (default false)
+
+# Choose if you want enable waitKey between each time.
+pauseBetweenEachTime    : false, # (default false)
+
+#-----------------------------------
+# Velocity Profile parameterization
+#-----------------------------------
+
+# Choose the constraints which must be add during velocity profile creation.
+trafficRulesConstraints : true, # (default true)
+curvatureConstraints    : true, # (default true)
+accelerationConstraints : true, # (default true)
+decelerationConstraints : true, # (default true)
+idmConstraints          : true, # (default true)
+
+# Minimal distance between two points in the final path (in meters).
+reSamplePathMinDist    : 15.0,   # (default 15.0 m)
+
+# Bounds to smooth turns into paths which are not represented by a curve.
+# Hard turn represents a turn around 90 degree.
+# Soft turn represents the other turn.
+# smoothSoftTurnMaxBound > smoothHardTurnMaxBound > smoothHardTurnMinBound > smoothSoftTurnMinBound
+smoothHardTurnMinBound :  65.0,   # (default  65.0 degree)
+smoothHardTurnMaxBound : 115.0,   # (default 115.0 degree)
+smoothSoftTurnMinBound :  20.0,   # (default  20.0 degree)
+smoothSoftTurnMaxBound : 160.0,   # (default 160.0 degree)
+
+# Number of desired samples in the curved path. For good result, assure that it is bigger than the size of the path.
+nbSampleCurvProfile    : 600,   # (default 600)
+
+# Amount of smoothing for the curvature profile.
+amountOfSmoothing      : 0.1,   # (default 0.1)
+
+# Stopping distance before a traffic rule (in meters).
+stopDistance           : 3.5,   # (default 3.5)
+
+# Maximum allowed speed for ech profile defensive (P1), normal (P2), sporty (P3) from law speed limitation (in %).
+# Percentage of law speed limitation at each sample for each profile.
+maxSpeedPercentP1      :  80.0,   # (default  80.0 %)
+maxSpeedPercentP2      :  90.0,   # (default  90.0 %)
+maxSpeedPercentP3      : 100.0,   # (default 100.0 %)
+
+# Maximal lateral acceleration for ech profile defensive (P1), normal (P2), sporty (P3) (in m/s²).
+aLatP1                 : 2.00,   # (default 2.00 m/s²)
+aLatP2                 : 2.75,   # (default 2.75 m/s²)
+aLatP3                 : 3.50,   # (default 3.50 m/s²)
+
+# Maximal acceleration for ech profile defensive (P1), normal (P2), sporty (P3) (in m/s²).
+aP1                    : 1.5,   # (default 1.5 m/s²)
+aP2                    : 2.0,   # (default 2.0 m/s²)
+aP3                    : 2.5,   # (default 2.5 m/s²)
+
+# Minimal velocity gradient for ech profile defensive (P1), normal (P2), sporty (P3) (in /s).
+gP1                    : 0.15,   # (default 0.15 /s)
+gP2                    : 0.20,   # (default 0.20 /s)
+gP3                    : 0.25,   # (default 0.25 /s)
+
+# Permit to delete same case in all possible velocity profiles following an acceptable difference (in %).
+equalDiffPrecent       : 0.0,   # (default 0.0 %)
+
+# Acceleration exponent.
+aExpo                  : 4.0,   # (default 4.0)
+
+# Comf. deceleration (in m/s²).
+comfDeceleration       : 3.0,   # (default 3.0 m/s²)
+
+# Min. gap to leading vehicule (in m).
+d0                     : 2.0,   # (default 2.0 m)
+
+# Time gap to leading vehicule (in s).
+timeGap                : 0.8,   # (default 0.8 s)
+
+}

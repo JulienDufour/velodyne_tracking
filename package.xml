@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>velodyne_tracking</name>
+  <version>0.0.0</version>
+  <description>Object tracking using velodyne</description>
+
+
+  <maintainer email="unnar@kth.se">unnar</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf2_kdl</build_depend>
+
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>tf2_kdl</run_depend>
+
+  <export>
+  </export>
+</package>

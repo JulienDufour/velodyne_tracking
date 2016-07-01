@@ -1,0 +1,33 @@
+<launch>
+    <!-- Creates input arguments  -->
+    <!-- id specifies the id of the kitti dataset -->
+    <arg name="id" default="0"/>
+    <!-- date specifies the date of the kitti dataset -->
+    <arg name="date" default="0"/>
+    <!-- scale 1 specifies the normal radius for normal calculation 1 -->
+    <arg name="scale1" default="0.5"/>
+    <!-- scale 2 specifies the normal radius for normal calculation 2 -->
+    <arg name="scale2" default="5.0"/>
+    <!-- The threshold on the normal difference -->
+    <arg name="threshold" default="0.3"/>
+
+    <node name="kitti2pcl2don" pkg="velodyne_tracking" type="kitti2pcl2don"
+        clear_params="true"
+        output="screen">
+        <param name="date" value="$(arg date)" />
+        <param name="id" value="$(arg id)" />
+        <param name="scale1" value="$(arg scale1)" />
+        <param name="scale2" value="$(arg scale2)" />
+        <param name="threshold" value="$(arg threshold)" />
+
+        <!-- YAML file containing all remaining parameters -->
+        <rosparam file="$(find velodyne_tracking)parameters.yaml" command="load"/>
+
+    </node>
+</launch>
+
+
+<!--  HOW TO USE  -->
+<!--  Change date and id to get correct path to dataset  -->
+<!--  Optional parameters scale1, scale2 and threshold can be added to adjust normal calculations. -->
+<!--  roslaunc velodyne_tracking kitti2don.launch date:=2011_09_26 id:=0005  -->

@@ -1,0 +1,7 @@
+<launch>
+    <node name="kitti2dlib" pkg="velodyne_tracking" type="kitti2dlib"
+        clear_params="true"
+        output="screen">
+    </node>
+</launch>
+

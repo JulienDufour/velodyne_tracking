@@ -1,0 +1,37 @@
+<launch>
+    <!-- Creates input arguments  -->
+    
+    <!-- id specifies the id of the kitti dataset -->
+    <arg name="id" default="0"/>
+    
+    <!-- date specifies the date of the kitti dataset -->
+    <arg name="date" default="0"/>
+
+    <!-- cut specifies if you want recut the OSM input file (see osmFileName in .yaml) -->
+    <arg name="cut" default="true"/>
+
+    <!-- obj specifies the desired object id that you want analysed -->
+    <arg name="obj" default="0"/>
+
+    <!-- path specifies the desired path idx that you want analysed for the selected obj -->
+    <arg name="path" default="0"/>
+
+    <!-- veloP specifies the desired velocity profile idx that you want analysed for the selected obj and selected path -->
+    <arg name="veloP" default="0"/>
+
+    <node name="driverBehavior" pkg="velodyne_tracking" type="driverBehavior"
+        clear_params="true"
+        output="screen">
+        <param name="date" value="$(arg date)" />
+        <param name="id" value="$(arg id)" />
+        <param name="cut" value="$(arg cut)" />
+        <param name="driverIdObject" value="$(arg obj)" />
+        <param name="driverIdPath" value="$(arg path)" />
+        <param name="driverIdVeloP" value="$(arg veloP)" />
+
+        <!-- YAML file containing all remaining parameters -->
+        <rosparam file="$(find velodyne_tracking)driverBehaviorParameters.yaml" command="load"/>
+
+    </node>
+
+</launch>

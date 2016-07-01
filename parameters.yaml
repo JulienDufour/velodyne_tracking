@@ -1,0 +1,61 @@
+{
+#############################
+# track.cpp
+#############################
+
+# This parameter can be uncommented to specify a different save location
+# for the extracted path.
+# Defaults to ros::package::getPath("velodyne_tracking")+"/datasets/"+date+"/"+date+"_drive_"+id+"_sync/"
+# where date and id are input arguments.
+save_path            : /home/julien/catkin_ws/src/velodyne_tracking/datasets/csv,
+
+# Specifies the leaf size (m) used in the voxel grid filter from pcl.
+# used to downsample the cloud. Bigger number -> more downsampling.
+voxel_leaf_size        : 0.1,   # (default 0.1)
+
+# Parameters for the euclidean clustering method from pcl_ros.
+# tolerance            : maximum distance (m) between two points to be considered in same cluster.
+# min_size             : minimum number of points in a single cluster for it to be used.
+# max_size             : maximum number of points in a single cluster for it to be used.
+ec_tolerance           : 0.5,   # (default 0.5)
+ec_min_size            : 25,    # (default 25)
+# ec_max_size          : 1000000, # (default 1000000, large value)
+
+# Parameters used for the radius outlier removal from PCL.
+# radius               : The radius (m) of the search area around each point.
+# min_neighbours       : minimum number of neighbours in the seach area for the point to be kept.
+ro_radius              : 1.0,   # (default 1.0)
+ro_min_neighbours      : 8,     # (default 8)
+
+# Osm file for input (".osm" or ".osm.pbf")
+# Needed that it put into datasets/osm/data
+# Go to : http://download.geofabrik.de/
+osmFileName           : karlsruhe-regbez-latest.osm.pbf,
+
+# Osm cut ray
+# Represent the diameter (in Km) of the map circle around the car
+osmCutRay             : 0.7,    # (default 1.0)
+
+#############################
+# objectTracking class
+#############################
+
+# Specifies the maximum distance (m) a cluster can be away from an existing object
+# for them to be matched together.
+max_distance           : 2.25,   # (default 3.0)
+
+# Specifies the number of k neighbours into the kdTree node research from object position.
+k_kdTree               : 10,    # (default 10)
+
+#############################
+# object class
+#############################
+
+# Specifies the minimum path length (m) for an object for it to be included in the
+# final path export.
+path_length            : 5.0,  # (default 10.0)
+
+# Specifies the maximum time (s) since object was last seen before it is no longer updated.
+time_since_measurement : 1.0,   # (default 1.0)
+
+}
