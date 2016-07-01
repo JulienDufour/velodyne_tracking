@@ -9,9 +9,8 @@ In all parts, the used datasets are provided by [KITTI](http://www.cvlibs.net/da
 The code was tested using : 
 
 
-. ROS Indigo, Libosmium library (2.6.1), PLplot library (5.11.1), dlib library (18.18), KFilter library (1.3) and glm on Ubuntu 14.04 LTS.
-
-. ROS Kinetic, Libosmium library (2.7.2), PLplot library (5.11.1), dlib library (19.0), KFilter library (1.3) and glm on Ubuntu 16.04 LTS.
+* ROS Indigo, Libosmium library (2.6.1), PLplot library (5.11.1), dlib library (18.18), KFilter library (1.3) and glm on Ubuntu 14.04 LTS.
+* ROS Kinetic, Libosmium library (2.7.2), PLplot library (5.11.1), dlib library (19.0), KFilter library (1.3) and glm on Ubuntu 16.04 LTS.
 
 ## Libosmium library
 
