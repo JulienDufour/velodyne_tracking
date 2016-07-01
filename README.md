@@ -22,7 +22,7 @@ To use it, you must install his important and extra [dependencies](https://githu
 
 [PLplot](http://plplot.sourceforge.net) is a cross-platform software package for creating scientific plots. Here, the PLplot core library is used to create standard x-y plots.
 
-To install this library, download the package and follow the installation readme given by into the downloads section.
+To install this library, download or clone the package presents into the downloads section and follow the installation readme.
 
 During the installation process, if you meet a problem with qt, qt which does not use into this project, you can fix that by a simply way. Go to plplot package folder. Then open /cmake/modules/drivers-init.cmake and change "OFF" by "ON" at this line : 
 
@@ -40,7 +40,6 @@ To use it, download the sources from dlib website. Then, go into package folder 
     mkdir build
     cd build
     cmake ..
-    cmake .. --build . --config Release
     make
     make install
 
