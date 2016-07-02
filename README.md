@@ -61,7 +61,7 @@ To install this library, download the sources and follow "install.txt". Then go 
 
 ## osm-history-splitter-master
 
-[osm-history-splitter-master](https://github.com/MaZderMind/osm-history-splitter) is an external code which uses here to cut osm map in the purpore of improve calculation. To use it, go into /iclude/osm/osm-history-splitter-master and build it :
+[osm-history-splitter-master](https://github.com/MaZderMind/osm-history-splitter) is an external code which is used here to cut osm map in the purpore of improve calculation. To use it, go into /include/osm/osm-history-splitter-master and build it :
 
     mkdir build
     cd build
