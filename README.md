@@ -57,7 +57,16 @@ To install this library, download the sources and follow "install.txt". Then go 
 
 [OpenGL Mathematics (GLM)](http://glm.g-truc.net/0.9.7/index.html) is a header only C++ mathematics library. To obtain it, enter this line in a terminal :
     
-    sudo apt-get install libglm-dev  
+    sudo apt-get install libglm-dev
+
+## osm-history-splitter-master
+
+[osm-history-splitter-master](https://github.com/MaZderMind/osm-history-splitter) is an external code which uses here to cut osm map in the purpore of improve calculation. To use it, go into /iclude/osm/osm-history-splitter-master and build it :
+
+    mkdir build
+    cd build
+    cmake ..
+    make
 
 # How to run
 
