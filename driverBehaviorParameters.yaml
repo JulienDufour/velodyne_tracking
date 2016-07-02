@@ -24,8 +24,8 @@ minPathSize           : 140.0,   # (default 140.0 m)
 #----------------------------
 
 # Screen dimension (in pixel).
-screenHeight            : 1000, # (default 600)
-screenWidth             : 1800, # (default 800)
+screenHeight            : 800, # (default 600)
+screenWidth             : 1300, # (default 800)
 
 # Use default driver for plot (xwin). Put false if you want choose the driver yourself through a list in the terminal.
 defaultPlotDriver       : true, # (default true)
