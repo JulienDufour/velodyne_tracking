@@ -165,7 +165,11 @@ Here, the code is launched by **"driverBehavior.launch"**. The launch file need 
 
 This default call launch an intensive process which is cutting of the big OSM map. In reality for the same dataset, you need to cut the map just one time. To disable this option when you use the same set several time, use **"cut:=false"** from the second call.
 
-Then, it is possible to use tree more parameters :
+Then, it is possible to use three more parameters :
 * **"obj"** which specifies the id of the desired object that you want analyse.
 * **"path"** which specifies the idx of the desired path that you want analyse for the selected obj.
 * **"veloP"** which specifies the idx if the desired velocity profile that you want analyse for the selected obj and selected path.
+
+### Output
+
+In this part, there is not output file. But, during the process, there is possible to see some informations in the terminal and in the different plots. Also, at the end of process, the result of driver behavior analysed is write in the terminal.
