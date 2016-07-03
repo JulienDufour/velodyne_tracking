@@ -10,13 +10,13 @@
     <!-- cut specifies if you want recut the OSM input file (see osmFileName in .yaml) -->
     <arg name="cut" default="true"/>
 
-    <!-- obj specifies the desired object id that you want analysed -->
+    <!-- obj specifies the id of the desired object that you want analyse -->
     <arg name="obj" default="0"/>
 
-    <!-- path specifies the desired path idx that you want analysed for the selected obj -->
+    <!-- path specifies the desired path idx that you want analyse for the selected obj -->
     <arg name="path" default="0"/>
 
-    <!-- veloP specifies the desired velocity profile idx that you want analysed for the selected obj and selected path -->
+    <!-- veloP specifies the desired velocity profile idx that you want analyse for the selected obj and selected path -->
     <arg name="veloP" default="0"/>
 
     <node name="driverBehavior" pkg="velodyne_tracking" type="driverBehavior"
