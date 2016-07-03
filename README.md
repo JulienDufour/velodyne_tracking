@@ -81,7 +81,7 @@ For example:
 
 ### Input
 
-Please see "parameters.yaml".
+Please see **"parameters.yaml"**.
 
 ### Run
 
@@ -158,13 +158,13 @@ For additional parameters, please see "driverBehaviorParameters.yaml".
 
 ### Run
 
-Here, the code is launched by "driverBehavior.launch". The launch file need the default input arguments **"date"** and **"id"** to specify the path of the desired dataset. For example :
+Here, the code is launched by **"driverBehavior.launch"**. The launch file need the default input arguments **"date"** and **"id"** to specify the path of the desired dataset. For example :
 
     roslaunch velodyne_tracking driverBehavior.launch date:=2011_09_26 id:=5
 
-This default call launch an intensive process which is cutting of the big OSM map. In reality for the same dataset, you need to cut the map just one time. To disable this option when you use the same set several time, use "cut:=false" from the second call.
+This default call launch an intensive process which is cutting of the big OSM map. In reality for the same dataset, you need to cut the map just one time. To disable this option when you use the same set several time, use **"cut:=false"** from the second call.
 
 Then, it is possible to use tree more parameters :
-* "obj" which specifies the id of the desired object that you want analyse.
-* "path" which specifies the idx of the desired path that you want analyse for the selected obj.
-* "veloP" which specifies the idx if the desired velocity profile that you want analyse for the selected obj and selected path.
+* **"obj"** which specifies the id of the desired object that you want analyse.
+* **"path"** which specifies the idx of the desired path that you want analyse for the selected obj.
+* **"veloP"** which specifies the idx if the desired velocity profile that you want analyse for the selected obj and selected path.
